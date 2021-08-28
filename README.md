@@ -25,7 +25,7 @@ Read a Google Spreadsheet directly into R
 # READ AS CSV
 URL <- 'https://docs.google.com/spreadsheets/d/1RoiO9bfpbXowprWdZrgtYXG9_WuK3NFemwlvDGdym7E/export?gid=1335284952&format=csv'
 d <- read.csv( URL )
-head( d[ , c(1,4:6) ] )
+head( d )
 
 ```
 
