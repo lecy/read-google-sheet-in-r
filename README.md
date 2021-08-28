@@ -2,6 +2,7 @@
 
 Read a Google Spreadsheet directly into R 
 
+## CSV OPTION 
 
 ```r
 # FORMAT OF URL OF GOOGLE SHEET
@@ -29,24 +30,17 @@ head( d[ , c(1,4:6) ] )
 ```
 
 
---------------------------------------------------------------------
- Calendar.Year       Department.Description         Salary      FTE 
---------------- -------------------------------- ------------- -----
-     2020        Sch Biological & Hlth Sys Engr   $35,090.00    100 
-
-     2020        Sch Biological & Hlth Sys Engr   $71,400.00    100 
-
-     2020              Admission Services         $36,000.00    100 
-
-     2020                 CASGE Tempe             $64,000.00    100 
-
-     2020        Health & Clinical Partnerships   $20,800.00    50  
-
-     2020        Sch Biological & Hlth Sys Engr   $107,195.00   100 
---------------------------------------------------------------------
+| Calendar.Year|Full.Name                           |Job.Description            |Department.Description         |Salary      | FTE|
+|-------------:|:-----------------------------------|:--------------------------|:------------------------------|:-----------|---:|
+|          2020|xxx, xxx                            |Research/Lab Assistant     |Sch Biological & Hlth Sys Engr |$35,090.00  | 100|
+|          2020|xxx, xxx                            |Lecturer                   |Sch Biological & Hlth Sys Engr |$71,400.00  | 100|
+|          2020|xxx, xxx                            |Student Support Specialist |Admission Services             |$36,000.00  | 100|
+|          2020|xxx, xxx                            |Project Manager            |CASGE  Tempe                   |$64,000.00  | 100|
+|          2020|xxx, xxx                            |Management Intern          |Health & Clinical Partnerships |$20,800.00  |  50|
+|          2020|xxx, xxx                            |Assoc Professor            |Sch Biological & Hlth Sys Engr |$107,195.00 | 100|
 
 
-
+## Excel Option 
 
 ```r
 # DOWNLOAD ALL TABS IN EXCEL WORKBOOK: 
